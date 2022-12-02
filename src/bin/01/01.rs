@@ -6,7 +6,7 @@ use std::io::Write;
 fn main(){
     env::set_var("RUST_BACKTRACE", "full");
 
-    let mut output = File::create("output.txt").unwrap();
+    let mut output = File::create("src/bin/01/output.txt").unwrap();
 
     let data = include_str!("input.txt").split(
         "\r\n\r\n"
